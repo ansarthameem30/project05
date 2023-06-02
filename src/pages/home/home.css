@@ -1,0 +1,285 @@
+.main__header
+{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    margin-top: 3rem;
+
+}
+.main__header-container
+{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6rem;
+}
+.main__header-left
+{
+    margin-top: -3rem;
+}
+.main__header-left h4{
+    color: var(--color-secondary);
+    font-weight: 500;
+}
+.main__header-left p
+{
+    margin: 1rem 0 3.5rem;
+    font-size: 1.1rem;
+}
+.main__header-right
+{
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+.main__header-circle
+{
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    position: absolute;
+    filter: blur(15px);
+    background: linear-gradient(75deg, var(--color-primary), transparent);
+}
+
+.main__header-image
+{
+    position: relative;
+}
+
+
+
+section
+{
+    margin-top: 10rem;
+}
+.section__head
+{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+}
+.section__head>span
+{
+    background: var(--color-gray-500);
+    border-radius: 1rem;
+    color: var(--color-secondary);
+    font-size: 1.5rem;
+    padding: 0.3rem 0.5rem 0.1rem 0.6rem;
+}
+
+
+/* ================ PROGRAMS ================ */
+
+.programs
+{
+    margin-top: 4rem;
+    
+
+}
+.programs__wrapper
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    margin-top: 4rem;
+
+}
+.programs__program a{
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.programs__program:hover a
+{
+    background: var(--color-secondary);
+    color: var(--color-gray-500);
+}
+.programs__program .icons1
+{
+    position: relative;
+}
+
+.programs__program:nth-child(1):hover
+{
+    background: url(../../images/avengers.png);
+    background-size: auto;
+    background-position: center;
+    backdrop-filter: brightness(100%);
+    
+}
+.programs__program:nth-child(2):hover
+{
+    background: url(../../images/Dc.jpg);
+    background-position: center;
+}
+.programs__program:nth-child(3):hover
+{
+    background: url(../../images/summer1.jpg);
+    background-position: center;
+}
+.programs__program:nth-child(4):hover
+{
+    background: url(../../images/casuals.jpg);
+    background-position: center;
+}
+
+
+
+/* =============Values=============== */
+
+
+.values__container
+{
+    display: grid;
+    grid-template-columns: 34% 54%;
+    gap: 12%;
+}
+
+
+.values__image
+{
+    filter: saturate(0.25);
+    transition: var(--transition);
+
+}
+.values__image:hover
+{
+    filter: saturate(1);
+}
+.values__right >p
+{
+    margin-top: 2rem;
+}
+.values__wrapper
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem 3rem;
+    margin-top: 3rem;
+}
+.card.values__value
+{
+    padding-top: 3.5rem;
+    text-align: left;
+    position: relative;
+}
+.card span{
+    position: absolute;
+    top: -1.5rem;
+}
+
+
+
+
+/* ==========FAQs=========== */
+
+
+.faqs__wrapper
+{
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem 3rem;
+    align-items: flex-start;
+}
+.faq
+{
+    background: var(--color-gray-500);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    cursor: pointer;   
+}
+
+.faq div
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.faq__icon
+{
+    background: transparent;
+    color: var(--color-gray-100);
+    font-size: 1.5rem;
+
+}
+
+.faq p{
+    margin-top: 1.5rem;
+    
+}
+/* ============== Testimonials ===========*/
+
+.testimonial
+{
+    width: 50rem;
+    margin-inline: auto;
+}
+
+.testimonials__head
+{
+    justify-content: center;
+}
+
+.card.testimonial
+{
+    position: relative;
+    text-align: left;
+    margin-top: 5rem;
+}
+.testimonial__avatar
+{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    position: absolute;
+    top: -2rem;
+    left: calc(50% - 2rem);
+    box-shadow: 0 1.5rem 2rem rgba(red, green, blue, alpha);
+    transition: var(--transition);
+}
+
+.testimonial:hover .testimonial__avatar{
+    border-radius: 50%;
+    border-color: var(--color-gray-400);
+
+}
+.testimonial__quote
+{
+    font-style: italic; 
+    margin: 1rem 0 2rem;
+
+}
+.card small.testimonial__title
+{
+    margin-top: 0.3rem;
+}
+.testimonials__btn-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.testimonials__btn
+{
+    margin-top: 2rem;
+    background-color: transparent;
+    cursor: pointer;
+
+}
+.testimonials__btn svg
+{
+    font-size: 2rem;
+    color: var(--color-primary);
+}
